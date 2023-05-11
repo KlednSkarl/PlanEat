@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login"
+    android:background="@drawable/bg_reg"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+
+         <de.hdodenhof.circleimageview.CircleImageView
+    android:layout_width="wrap_content"
+    android:src="@drawable/plan_eat"
+    android:layout_height="150dp"/>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputEmail"
+            android:layout_marginTop="50dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/black"
+            app:boxStrokeColor="@color/black"
+            app:endIconMode="clear_text"
+            app:endIconTint="@color/black"
+            app:errorEnabled="true"
+            app:hintTextColor="@color/black"
+            app:startIconDrawable="@drawable/baseline_email_24"
+            app:startIconTint="@color/black">
+
+        <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/input_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email Address"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/black" />
+
+            <!--Input Email Address here-->
+        </com.google.android.material.textfield.TextInputLayout>
+        <!-- Password -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputpass"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/black"
+        app:boxStrokeColor="@color/black"
+        app:counterTextColor="@color/black"
+
+        app:endIconMode="password_toggle"
+        app:endIconTint="@color/black"
+        app:errorEnabled="true"
+        app:hintTextColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:startIconDrawable="@drawable/baseline_lock_24"
+        app:startIconTint="@color/black">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/input_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Password"
+            android:inputType="textPassword"
+            android:textColor="@color/black" />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <Button
+        android:id="@+id/log_in"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+
+        android:text="Log In"
+        android:textColor="@color/black"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/brown"
+        android:onClick="gotoMainMenu"/>
+
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="gotoReg"
+        android:layout_gravity="center"
+        android:text="Dont Have an Account? Sign In here" />
+
+
+
+</LinearLayout>

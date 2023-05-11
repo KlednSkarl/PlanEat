@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Summary"
+    android:orientation="vertical"
+    android:background="@drawable/bg_reg">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/plan_eat"
+        android:layout_marginLeft="20dp"
+        />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/graduate"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Summary"
+                android:textSize="40sp"
+
+                />
+
+            <TextView
+                android:id="@+id/schedule"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:text="Schedule"
+                android:textSize="40sp"
+
+                />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/image"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/bg_reg" />
+
+            <TextView
+                android:id="@+id/meal_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="50dp"
+                android:text="Meal Name"
+                android:textSize="15sp"
+
+
+                />
+
+            <TextView
+                android:id="@+id/meal_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="50dp"
+                android:text="Desc"
+                android:textSize="20sp"
+
+                />
+
+
+
+            <Button
+                android:layout_marginTop="30dp"
+                android:id="@+id/btn_alarm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Proceed"
+                android:backgroundTint="@color/brown"
+                android:layout_gravity="center_horizontal"
+                />
+        </LinearLayout>
+
+
+
+    </ScrollView>
+</LinearLayout>

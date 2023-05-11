@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".profile_settings"
+    android:orientation="vertical"
+    android:background="@drawable/bg_reg"
+    android:padding="10dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+
+        android:clickable="true"
+        android:focusable="true"
+        android:background="@drawable/user_dp"
+        android:layout_gravity="center"
+        android:onClick="selectImage" />
+
+   <ScrollView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:contentDescription="@string/graduate">
+
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:orientation="vertical">
+           <TextView
+               android:paddingTop="10dp"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Username"
+               android:layout_gravity="left"
+               android:textSize="20sp"
+               android:paddingBottom="20dp"/>
+           <androidx.cardview.widget.CardView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               app:cardElevation="20dp"
+               android:backgroundTint="@color/brown"
+               >
+
+               <TextView
+                   android:id="@+id/tv_username"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="left"
+
+                   android:paddingTop="10dp"
+                   android:paddingBottom="20dp"
+                   android:textSize="20sp"
+                   /></androidx.cardview.widget.CardView>
+
+
+           <TextView
+               android:paddingTop="10dp"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Email"
+               android:layout_gravity="left"
+               android:textSize="20sp"
+               android:paddingBottom="20dp"/>
+           <androidx.cardview.widget.CardView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               app:cardElevation="20dp"
+               android:backgroundTint="@color/brown"
+               >
+               <TextView
+                   android:id="@+id/tv_email"
+                   android:paddingTop="10dp"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+
+                   android:layout_gravity="left"
+                   android:textSize="20sp"
+                   android:paddingBottom="20dp"/>
+
+           </androidx.cardview.widget.CardView>
+           <TextView
+               android:paddingTop="10dp"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Your Height (cm)"
+               android:layout_gravity="left"
+
+               android:textSize="20sp"
+               android:paddingBottom="20dp"/>
+           <androidx.cardview.widget.CardView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               app:cardElevation="20dp"
+               android:backgroundTint="@color/brown"
+               >
+               <TextView
+                   android:id="@+id/tv_height"
+                   android:paddingTop="10dp"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+
+                   android:layout_gravity="left"
+                   android:textSize="20sp"
+                   android:paddingBottom="20dp"/>
+           </androidx.cardview.widget.CardView>
+
+           <TextView
+               android:paddingTop="10dp"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Your Weight (kg)"
+               android:layout_gravity="left"
+               android:textSize="20sp"
+               android:paddingBottom="20dp"/>
+
+           <androidx.cardview.widget.CardView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               app:cardElevation="20dp"
+               android:backgroundTint="@color/brown"
+               >
+               <TextView
+                   android:id="@+id/tv_weight"
+                   android:paddingTop="10dp"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+
+                   android:layout_gravity="left"
+                   android:textSize="20sp"
+                   android:paddingBottom="20dp"/>
+           </androidx.cardview.widget.CardView>
+
+           <TextView
+               android:paddingTop="10dp"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Your BMI"
+               android:layout_gravity="left"
+               android:textSize="20sp"
+               android:paddingBottom="20dp"/>
+           <androidx.cardview.widget.CardView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               app:cardElevation="20dp"
+               android:backgroundTint="@color/brown"
+               >
+               <TextView
+                   android:id="@+id/tv_BMI"
+                   android:paddingTop="10dp"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+
+                   android:layout_gravity="left"
+                   android:textSize="20sp"
+                   android:paddingBottom="20dp"/>
+           </androidx.cardview.widget.CardView>
+
+           <TextView
+               android:paddingTop="10dp"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Recommendation"
+               android:layout_gravity="left"
+               android:textSize="20sp"
+               android:paddingBottom="20dp"/>
+           <androidx.cardview.widget.CardView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               app:cardElevation="20dp"
+               android:backgroundTint="@color/brown"
+               >
+               <TextView
+                   android:id="@+id/tv_recommendation"
+                   android:paddingTop="10dp"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+
+                   android:layout_gravity="left"
+                   android:textSize="20sp"
+                   android:paddingBottom="20dp"/>
+           </androidx.cardview.widget.CardView>
+
+
+           <Button
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:id="@+id/edit_profile"
+               android:text="Edit profile"
+               android:layout_marginTop="20dp"
+               android:backgroundTint="@color/brown"
+               android:layout_gravity="center_horizontal"
+               />
+
+       </LinearLayout>
+
+
+
+
+   </ScrollView>
+    <!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:orientation="vertical"-->
+<!--        android:paddingLeft="10dp"-->
+<!--      >-->
+
+<!--        <TextView-->
+
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Your Username"-->
+<!--            android:layout_marginBottom="20dp"-->
+
+<!--            />-->
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Your Email address"-->
+<!--            android:layout_marginBottom="20dp"-->
+<!--            />-->
+
+<!--        <TextView-->
+
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Your BMI"-->
+<!--            android:layout_marginBottom="20dp"-->
+
+<!--            />-->
+
+<!--        <TextView-->
+
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Your Height"-->
+<!--            android:layout_marginBottom="20dp"-->
+
+<!--            />-->
+
+<!--        <TextView-->
+
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Your Weight"-->
+<!--            android:layout_marginBottom="20dp"-->
+
+<!--            />-->
+
+<!--        <TextView-->
+
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Gender"-->
+<!--            android:layout_marginBottom="20dp"-->
+
+<!--            />-->
+<!--    </LinearLayout>-->
+
+
+
+</LinearLayout>

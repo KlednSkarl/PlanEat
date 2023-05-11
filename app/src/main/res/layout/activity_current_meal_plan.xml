@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".current_meal_Plan"
+    android:background="@drawable/bg_reg"
+    android:orientation="vertical">
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/exit"
+
+        android:onClick="exit"
+        />
+    <TextView
+
+        android:text="Current Meal Plan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="40dp"
+        android:layout_marginBottom="40dp"
+        android:layout_gravity="center_horizontal"/>
+
+    <TextView
+
+        android:text="Breakfast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="40dp"
+        android:layout_gravity="center_horizontal"/>
+
+    <TextView
+        android:id="@+id/breakfast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_gravity="center_horizontal"/>
+    <TextView
+
+        android:text="Lunch"
+        android:layout_width="wrap_content"
+        android:textSize="40sp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"/>
+
+    <TextView
+        android:id="@+id/lunch"
+        android:layout_width="wrap_content"
+        android:textSize="20sp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"/>
+    <TextView
+
+        android:text="Dinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="40sp"
+        android:layout_gravity="center_horizontal"/>
+
+    <TextView
+        android:id="@+id/dinner"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"/>
+
+
+</LinearLayout>

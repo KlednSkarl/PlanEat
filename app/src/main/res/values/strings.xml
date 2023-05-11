@@ -1,0 +1,78 @@
+<resources>
+    <string name="app_name">UI_presentation</string>
+    <string name="description">Welcome to Plan Eat!</string>
+    <string name="notes">Input the information needed before we proceed</string>
+    <string name="survey_1"> Input username</string>
+    <string name="survey_2">What is your height? In centimeters</string>
+    <string name="survey_3">What is your weight? In kilograms</string>
+    <string name="username"> Enter User Name</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string-array name="menu_meals">
+        <item> Ampalaya</item>
+        <item> Bistek Tagalog</item>
+        <item> Champorado</item>
+        <item> Chicken Adobo</item>
+        <item> Escabecheng Isda</item>
+        <item> Fried Rice</item>
+        <item> Lugaw</item>
+        <item> Munggo</item>
+        <item> Nilagang Baka</item>
+        <item> Pandesal</item>
+        <item> Pinakbet</item>
+        <item> Pork Humba</item>
+        <item> Sinigang na Isda</item>
+        <item> Taho</item>
+        <item> Tinolang Tokwa</item>
+
+
+    </string-array>
+
+
+    <string-array name="calories">
+
+        <item> 78</item>
+        <item> 210</item>
+        <item> 78</item>
+        <item> 157</item>
+        <item> 234</item>
+        <item> 276</item>
+        <item> 164</item>
+        <item> 91</item>
+        <item> 260</item>
+        <item> 160</item>
+        <item> 175</item>
+        <item> 313</item>
+        <item> 417</item>
+        <item> 62</item>
+        <item> 185</item>
+
+    </string-array>
+
+
+    <string-array name="meal_description">
+        <item> Bitter yet a good meal for a healthy diet</item>
+        <item> A good meal for someone who loves meat</item>
+        <item> A traditional breakfast for everyone</item>
+        <item> Filipino"'"s best meal ever</item>
+        <item> Fish with sauce that good for consumption</item>
+        <item> A good breakfast comes with a good fried rice meal</item>
+        <item> A poor man"'"s meal"," yet tasteful and nutritious depending on its ingredients</item>
+        <item> A meal for fridays</item>
+        <item> Meal for heavy eaters</item>
+        <item> Piece of bread that became the traditional breakfast for some Filipinos</item>
+        <item> Mixture of vegetables that results to a tasty meal</item>
+        <item> Delicious meal made from the pig</item>
+        <item> Nutritious meal from the sea</item>
+        <item> Came from the vendor outside shouting about his items</item>
+        <item> An experimented meal that turns out to be good</item>
+
+
+    </string-array>
+
+    <string name="graduate">Sheesh</string>
+    <string name="back"><![CDATA[<-]]></string>
+    <string name="forward"><![CDATA[->]]></string>
+</resources>
